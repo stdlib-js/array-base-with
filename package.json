@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-with",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return a new array with the element at the specified index replaced with a provided value.",
   "license": "Apache-2.0",
   "author": {
