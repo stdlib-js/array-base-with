@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@deno/mod.js';
+import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.1.1-deno/mod.js';
 ```
 
 #### arrayWith( x, index, value )
@@ -110,7 +110,7 @@ The function accepts the following arguments:
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@deno/mod.js';
+import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.1.1-deno/mod.js';
 
 // Define an array:
 var opts = {
