@@ -85,7 +85,6 @@ var out = arrayWith( x, 0, 5 );
 
 out = arrayWith( x, -1, 6 );
 // returns [ 1, 2, 3, 6 ]
-
 ```
 
 The function accepts the following arguments:
@@ -93,6 +92,30 @@ The function accepts the following arguments:
 -   **x**: an input array.
 -   **index**: element index.
 -   **value**: replacement value.
+
+### arrayWith.assign( x, index, value, out, stride, offset )
+
+Copies elements from one array to another array and sets the element at the specified index to a provided value.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+
+var out = [ 0, 0, 0, 0 ];
+var arr = arrayWith.assign( x, 0, 5, out, 1, 0 );
+// returns [ 5, 2, 3, 4 ]
+
+var bool = ( arr === out );
+// returns true
+```
+
+The function accepts the following arguments:
+
+-   **x**: an input array.
+-   **index**: element index.
+-   **value**: replacement value.
+-   **out**: output array.
+-   **stride**: output array stride.
+-   **offset**: output array offset.
 
 </section>
 
@@ -104,13 +127,13 @@ The function accepts the following arguments:
 
 ## Notes
 
--   If provided an array-like object having a `with` method, the function defers execution to that method and assumes that the method has the following signature:
+-   If provided an array-like object having a `with` method, the `arrayWith` function defers execution to that method and assumes that the method has the following signature:
 
     ```text
     x.with( index, value )
     ```
 
-    If provided an array-like object without a `with` method, the function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
+    If provided an array-like object without a `with` method, the `arrayWith` function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
 
 -   Negative indices are resolved relative to the last array element, with the last element corresponding to `-1`.
 
@@ -208,8 +231,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-with.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-with
 
-[test-image]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-with/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-with?branch=main

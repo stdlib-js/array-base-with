@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-08-17)
+
+<section class="features">
+
+### Features
+
+-   [`15c9b0e`](https://github.com/stdlib-js/stdlib/commit/15c9b0e711e44c7e06ba768ab577d8cffdc5647d) - add support for assigning to an output array
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`45bfdb6`](https://github.com/stdlib-js/stdlib/commit/45bfdb698f5b5b31e1782efe846b76ee64ab032a) - update error messages to accommodate signed integers
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`e22b37a`](https://github.com/stdlib-js/stdlib/commit/e22b37aaf13a81aa9c8536d54b8a43871e4bdd16) - **docs:** add example _(by Athan Reines)_
+-   [`1f1c2df`](https://github.com/stdlib-js/stdlib/commit/1f1c2dfc7314a343282c8d4904a8ad05c500f80d) - **docs:** fix example _(by Athan Reines)_
+-   [`15c9b0e`](https://github.com/stdlib-js/stdlib/commit/15c9b0e711e44c7e06ba768ab577d8cffdc5647d) - **feat:** add support for assigning to an output array _(by Athan Reines)_
+-   [`45bfdb6`](https://github.com/stdlib-js/stdlib/commit/45bfdb698f5b5b31e1782efe846b76ee64ab032a) - **fix:** update error messages to accommodate signed integers _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2024-07-29)
@@ -49,18 +106,6 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 </section>
 
 <!-- /.features -->
-
-<section class="issues">
-
-### Closed Issues
-
-This release closes the following issue:
-
-[#1328 ](https://github.com/stdlib-js/stdlib/issues/1328 )
-
-</section>
-
-<!-- /.issues -->
 
 <section class="commits">
 
