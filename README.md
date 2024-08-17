@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-with
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-with/tags). For example,
-
-```javascript
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.1.1-esm/index.mjs';
+var arrayWith = require( '@stdlib/array-base-with' );
 ```
 
 #### arrayWith( x, index, value )
@@ -72,7 +85,6 @@ var out = arrayWith( x, 0, 5 );
 
 out = arrayWith( x, -1, 6 );
 // returns [ 1, 2, 3, 6 ]
-
 ```
 
 The function accepts the following arguments:
@@ -80,6 +92,30 @@ The function accepts the following arguments:
 -   **x**: an input array.
 -   **index**: element index.
 -   **value**: replacement value.
+
+### arrayWith.assign( x, index, value, out, stride, offset )
+
+Copies elements from one array to another array and sets the element at the specified index to a provided value.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+
+var out = [ 0, 0, 0, 0 ];
+var arr = arrayWith.assign( x, 0, 5, out, 1, 0 );
+// returns [ 5, 2, 3, 4 ]
+
+var bool = ( arr === out );
+// returns true
+```
+
+The function accepts the following arguments:
+
+-   **x**: an input array.
+-   **index**: element index.
+-   **value**: replacement value.
+-   **out**: output array.
+-   **stride**: output array stride.
+-   **offset**: output array offset.
 
 </section>
 
@@ -91,13 +127,13 @@ The function accepts the following arguments:
 
 ## Notes
 
--   If provided an array-like object having a `with` method, the function defers execution to that method and assumes that the method has the following signature:
+-   If provided an array-like object having a `with` method, the `arrayWith` function defers execution to that method and assumes that the method has the following signature:
 
     ```text
     x.with( index, value )
     ```
 
-    If provided an array-like object without a `with` method, the function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
+    If provided an array-like object without a `with` method, the `arrayWith` function shallow copies input array data to a new generic array, normalizes a provided index, and sets a specified element.
 
 -   Negative indices are resolved relative to the last array element, with the last element corresponding to `-1`.
 
@@ -113,14 +149,9 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var arrayWith = require( '@stdlib/array-base-with' );
 
 // Define an array:
 var opts = {
@@ -139,10 +170,6 @@ var i;
 for ( i = 0; i < indices.length; i++ ) {
     console.log( 'x = [%s]', arrayWith( x, indices[ i ], values[ i ] ).join( ',' ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -174,7 +201,7 @@ for ( i = 0; i < indices.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -204,8 +231,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-with.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-with
 
-[test-image]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-with/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-with/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-with?branch=main
