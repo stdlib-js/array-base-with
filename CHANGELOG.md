@@ -32,6 +32,8 @@
 
 <details>
 
+-   [`6c76e49`](https://github.com/stdlib-js/stdlib/commit/6c76e49ef8864be363b016070187459ce8f3ef12) - **test:** refactor sample values _(by Athan Reines)_
+-   [`756afa3`](https://github.com/stdlib-js/stdlib/commit/756afa3daa3d10466283aacaf50d0adb1ba186fe) - **test:** add boolean array tests _(by Athan Reines)_
 -   [`e22b37a`](https://github.com/stdlib-js/stdlib/commit/e22b37aaf13a81aa9c8536d54b8a43871e4bdd16) - **docs:** add example _(by Athan Reines)_
 -   [`1f1c2df`](https://github.com/stdlib-js/stdlib/commit/1f1c2dfc7314a343282c8d4904a8ad05c500f80d) - **docs:** fix example _(by Athan Reines)_
 -   [`15c9b0e`](https://github.com/stdlib-js/stdlib/commit/15c9b0e711e44c7e06ba768ab577d8cffdc5647d) - **feat:** add support for assigning to an output array _(by Athan Reines)_
