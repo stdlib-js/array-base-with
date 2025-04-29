@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-30)
+## Unreleased (2025-04-29)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`1f7e55f`](https://github.com/stdlib-js/stdlib/commit/1f7e55f344d26c42e0c2ae001f8ac3ce16f1999a) - **docs:** remove unused packages [(#6837)](https://github.com/stdlib-js/stdlib/pull/6837) _(by Shabareesh Shetty)_
 -   [`6c76e49`](https://github.com/stdlib-js/stdlib/commit/6c76e49ef8864be363b016070187459ce8f3ef12) - **test:** refactor sample values _(by Athan Reines)_
 -   [`756afa3`](https://github.com/stdlib-js/stdlib/commit/756afa3daa3d10466283aacaf50d0adb1ba186fe) - **test:** add boolean array tests _(by Athan Reines)_
 -   [`e22b37a`](https://github.com/stdlib-js/stdlib/commit/e22b37aaf13a81aa9c8536d54b8a43871e4bdd16) - **docs:** add example _(by Athan Reines)_
@@ -49,9 +50,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Shabareesh Shetty
 
 </section>
 
