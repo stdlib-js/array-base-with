@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-14)
+## Unreleased (2025-09-15)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`0042479`](https://github.com/stdlib-js/stdlib/commit/0042479157f9756dfbb87f6e9eeae51f5084d5fa) - **style:** remove extra spaces in return annotation comments _(by Philipp Burckhardt)_
 -   [`627ead4`](https://github.com/stdlib-js/stdlib/commit/627ead48e08fcf20d5cb72c14014bb9df478adf9) - **docs:** fix example _(by Athan Reines)_
 -   [`a98ddb6`](https://github.com/stdlib-js/stdlib/commit/a98ddb6a05fd9c1c383857ee0abc3ed4efbac8d2) - **test:** fix require path _(by Athan Reines)_
 -   [`1f7e55f`](https://github.com/stdlib-js/stdlib/commit/1f7e55f344d26c42e0c2ae001f8ac3ce16f1999a) - **docs:** remove unused packages [(#6837)](https://github.com/stdlib-js/stdlib/pull/6837) _(by Shabareesh Shetty)_
@@ -52,9 +53,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   Shabareesh Shetty
 
 </section>
