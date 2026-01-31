@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@esm/index.mjs';
+import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.2.0-esm/index.mjs';
 ```
 
 #### arrayWith( x, index, value )
@@ -144,7 +144,7 @@ The function accepts the following arguments:
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@esm/index.mjs';
+import arrayWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-with@v0.2.0-esm/index.mjs';
 
 // Define an array:
 var opts = {
