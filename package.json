@@ -55,7 +55,7 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-base-accessor": "^0.2.2",
+    "@stdlib/array-base-accessor": "^0.2.3",
     "@stdlib/array-base-ones": "^0.2.3",
     "@stdlib/array-base-zeros": "^0.2.3",
     "@stdlib/array-bool": "^0.1.2",
@@ -66,11 +66,11 @@
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-is-array": "^0.2.3",
     "@stdlib/assert-is-complex128array": "^0.2.3",
-    "@stdlib/assert-is-equal-booleanarray": "^0.1.0",
+    "@stdlib/assert-is-equal-booleanarray": "^0.1.1",
     "@stdlib/assert-is-float64array": "^0.2.3",
     "@stdlib/assert-is-int32array": "^0.2.3",
     "@stdlib/assert-is-method": "^0.2.3",
-    "@stdlib/assert-is-same-complex128array": "^0.2.2",
+    "@stdlib/assert-is-same-complex128array": "^0.2.3",
     "@stdlib/complex-float64-ctor": "^0.1.2",
     "@stdlib/math-base-special-pow": "^0.3.1",
     "@stdlib/random-array-discrete-uniform": "^0.2.2",
